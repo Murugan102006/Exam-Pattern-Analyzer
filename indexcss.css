@@ -1,0 +1,42 @@
+
+body{
+    background: linear-gradient(to bottom,rgb(255, 255, 255) ,rgb(92, 94, 88));
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+form{
+    
+    border-top: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom,rgb(136, 136, 135) ,rgb(234, 235, 233));
+    width: 200px;
+    text-align: center;
+    box-shadow: 10px 10px 8px 10px rgba(0,0,0,0.2);
+
+}
+input{
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 175px;
+    padding: 5px;
+    margin-top: 5px;
+    background-color:rgb(61, 185, 235);
+    border-radius: 20px;
+    
+}
+button:hover{
+    background-color: rgb(9, 114, 146);
+    transform: scale(1.1,1.1);
+}
