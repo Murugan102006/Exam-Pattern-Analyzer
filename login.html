@@ -16,9 +16,9 @@
     
               }
           .login-container {
-            background: #f0f0f0;
+            background: #ffffff;
             padding: 30px 40px;
-            border-radius: 10px;
+            border-radius: 100px;
             width: 320px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
@@ -32,16 +32,16 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #2b1c1c;
-            border-radius: 5px;
+            border: 1px solid #110f0f;
+            border-radius: 50px;
             font-size: 14px;
         }
         .login-container button {
             width: 100%;
             padding: 10px;
-            background: #667eea;
+            background: #3daf6c;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             color: white;
             font-size: 16px;
             cursor: pointer;
@@ -60,17 +60,39 @@
     </head>
     <body>
         <div class="login-container">
-            <form>
-                    <h2>LOGIN</h2>
-                     <lable>USER NAME: <input type="text" placeholder="enter user name" required> </lable><br><br>
-                     <lable>PASSWORD: <input type=""password placeholder="enter password" required></lable><br><br>
-                     <button type="submit">LOGIN</button>
-                    
-            </form>
+    <form method="POST" action="/login">
+        <h2>LOGIN</h2>
+    <label>Username:</label>
+    <input type="text" name="username" required><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" required><br><br>
+
+    <button type="submit">Login</button>
+</form>
             
         <div class="footer">
-                  <p>Don't have account? <a href="#">sign up</a></p>
+                  <p>Don't have account? <a href="signup.html">sign up</a></p>
+
         </div>
+
     </div>
+    <script>
+        function validationlogin(){
+            let user=document.getElementById("user").value;
+            let pass=document.getElementById("pass").value;
+            if(user==""){
+                alert("User name is requried");
+                console.log("User name is requried");
+                return false;
+            }
+            if(pass==""){
+                alert("pass is required");
+                return false;
+            }
+            alert("login successfully");
+            return true;
+        }
+    </script>
     </body>
 </html>
